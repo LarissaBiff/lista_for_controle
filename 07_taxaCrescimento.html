@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
-    
+const habitantes = 80000;
+const crescimento = 0.03;
+let anos = 0;
     //PROCESSAMENTO
-
+for(let i = habitantes; i < 200000; i += i * crescimento){
+    anos++
+}
     
     //SAÍDA
-
+document.write(`Serão necessários ${anos} anos para que o número de habitandes atinja 200000 habitantes.`);
 </script>

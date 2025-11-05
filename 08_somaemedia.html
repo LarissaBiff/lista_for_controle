@@ -7,10 +7,19 @@
 
     //ENTRADA
 
-
+let soma = 0;
+let media = 0;
+let lista = [];
     //PROCESSAMENTO
 
+for(let i = 0; i <= 4; i++){
+    const numeros = Number(prompt(`Informe um número:`));
+    
+    lista.push(numeros)
+    soma += numeros;
+    media = soma / lista.length;
+}
 
     //SAÍDA
-
+document.write(`Soma: ${soma} <br>Média: ${media}`)
 </script>

@@ -6,11 +6,23 @@
     */
 
     //ENTRADA
-
-    
+const inicial = Number(prompt(`Informe o número inicial:`));
+const final = Number(prompt(`Informe o número final:`));
+    let par = [];
+    let impar = [];
     //PROCESSAMENTO
-
+if(inicial<final){
+    for(let i = inicial + 1; i < final; i++){
+        if( i%2 === 0){
+            par.push(i);
+        } else {
+            impar.push(i);
+        }
+    }
+} else {
+    alert('Erro, o número final precisa ser maior que o inicial.');
+}
     
     //SAÍDA
-
+document.write(`Números pares: ${par.join(', ')}<br>Números ípares: ${impar.join(', ')}`);
 </script>

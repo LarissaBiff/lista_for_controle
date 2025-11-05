@@ -6,11 +6,17 @@
     */
 
     //ENTRADA
-
+    let lista = [];
+    let soma = 0;
 
     //PROCESSAMENTO
-    for(numero = Infinity; )
+    for(let n = 1; n < 100; n++){
+        if(n % 3 === 0){
+            lista.push(n);
+            soma += n;
+        }
+    }
 
     //SAÍDA
-
+    document.write(`Números múltiplos de 3 entre 1 e 100: <br>${lista.join(', ')}. <br>Soma dos números: ${soma}.`);
 </script>
