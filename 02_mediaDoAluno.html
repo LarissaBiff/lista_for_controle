@@ -7,11 +7,17 @@
     */
 
     //ENTRADA
-    
-
+    const quantas_notas = Number(prompt("Quantas notas o aluno obteve?"));
+    let nota;
+    let conta = 0;
+    let soma = 0;
     //PROCESSAMENTO
-    
+    for(let i = 0; i<quantas_notas; i++){
+        nota = Number(prompt(`Informe a nota ${i + 1}:`)); 
+        soma += nota;
+        conta = soma / quantas_notas;
+    }
 
     //SAÍDA
-
+document.write(conta);
 </script>

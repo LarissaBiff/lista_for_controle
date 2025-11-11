@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
-const numero = Number(prompt(`Informe um número positivo:`));
-
+    const numero = Number(prompt(`Informe um número positivo:`));
+    let conta = 0;
     //PROCESSAMENTO
-
+    for(let i = 1; i <= numero; i++){
+        if(numero%i==0){
+            conta += 1;
+        }
+    }
 
     //SAÍDA
-
+    if(conta === 2){
+        alert("É primo!");
+    }else{
+        alert("Não é primo!");
+    }
 </script>
